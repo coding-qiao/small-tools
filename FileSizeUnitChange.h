@@ -1,8 +1,22 @@
 /*
  * need
  * #include <stdio.h>
- */
+ *
+ * use
+test.c
+#include <stdio.h>
+#include "FileSizeUnitChange.h"
 
+int main()
+{
+    char *str;
+    char *buf;
+    buf = FileSizeUnitChange(1024, &str);
+    printf("buf = %s\n", str);
+
+    return 0;
+}
+ */
 
 #ifndef _FILESIZEUNITCHANGE_H
 #define _FILESIZEUNITCHANGE_H
